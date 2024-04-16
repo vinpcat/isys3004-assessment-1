@@ -3,5 +3,13 @@ body {
     margin: 0 auto; 
     margin-top: 40px; 
     width: 60%; 
-    
+}
+
+header {
+    height: 250px;
+    background-image: url(https://imgur.com/toA2Uha); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
