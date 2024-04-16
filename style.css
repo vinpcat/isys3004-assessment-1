@@ -7,9 +7,6 @@ body {
 
 header {
     height: 250px;
-    background-image: url(https://imgur.com/toA2Uha); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden; /* Ensure GIF doesn't overflow the header */
+    position: relative; /* Needed for absolute positioning */
 }
