@@ -10,18 +10,15 @@
 	/>
 </head>
 
-<h2>Toggle Dark/Light Mode</h2>
-<p>Click the button to toggle between dark and light mode for this page.</p>
-
-<button onclick="myFunction()">Toggle dark mode</button>
+<button onclick="myFunction()">Toggle</button>
 
 <body>
     <header>
       <h1>Vincent's Website</h1>
       <nav>
-        <a href="#aboutme">About me</a> |
-        <a href="#myprojects>">My Projects</a> |
-        <a href="#content">Contents</a> |
+        <a href="#aboutme">About me</a> 
+        <a href="#myprojects>">My Projects</a> 
+        <a href="#content">Contents</a> 
       </nav>
     </header>
 
@@ -41,4 +38,11 @@
             </p>
     </section>
 
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+        
 </body>
