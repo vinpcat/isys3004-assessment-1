@@ -1,4 +1,4 @@
-const cursorTag= document.querySelector("div.cursors")
+const cursorTag = document.querySelector("div.cursors")
 const balls = cursorTag.querySelectorAll("div")
 
 let aimX = 0
