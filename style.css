@@ -9,7 +9,7 @@ body {
     font-size: 25px;
 }
 
-.dark-mode {
+dark-mode {
     background-color: rgb(48, 48, 48);
     color: white;
   }
