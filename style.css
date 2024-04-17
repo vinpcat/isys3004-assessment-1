@@ -16,7 +16,7 @@ header {
     position: relative; /* Needed for absolute positioning */
 }
 
-.dark-mode {
+dark-mode {
     background-color: rgb(58, 61, 58);
     color: white;
   }
