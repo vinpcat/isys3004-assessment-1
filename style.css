@@ -9,7 +9,7 @@ body {
     font-size: 25px;
 }
 
-dark-mode {
+.dark-mode {
     background-color: rgb(48, 48, 48);
     color: white;
   }
@@ -32,6 +32,6 @@ nav a {
     color: black; 
 }
 
-dark-mode nav a {
+.dark-mode nav a {
     color: white; 
 }
