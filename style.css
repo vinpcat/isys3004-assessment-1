@@ -4,21 +4,33 @@ body {
     margin-top: 40px; 
     width: 60%;
     padding: 25px;
-    background-color: white;
-    color: black;
+    background: rgb(255, 252, 208);
+    border: 25px;
     font-size: 25px;
-
 }
 
-header {
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-}
-
-dark-mode {
-    background-color: rgb(58, 61, 58);
+.dark-mode {
+    background-color: rgb(48, 48, 48);
     color: white;
   }
 
+  div.cursors div{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate(-50%, -50%)
+  }
  
+  nav a {
+    color: black; 
+}
+
+dark-mode nav a {
+    color: white; 
+}
