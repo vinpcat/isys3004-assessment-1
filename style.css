@@ -21,7 +21,7 @@ body {
     width: 12px;
     height: 12px;
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
+    border-radius: 80%;
     z-index: 10000;
     pointer-events: none;
     transform: translate(-50%, -50%)
