@@ -12,8 +12,8 @@ body {
 
 header {
     height: 250px;
-    overflow: hidden; /* Ensure GIF doesn't overflow the header */
-    position: relative; /* Needed for absolute positioning */
+    overflow: hidden;
+    position: relative;
 }
 
 dark-mode {
