@@ -10,3 +10,8 @@ header {
     overflow: hidden; /* Ensure GIF doesn't overflow the header */
     position: relative; /* Needed for absolute positioning */
 }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
