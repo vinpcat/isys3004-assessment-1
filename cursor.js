@@ -1,33 +1,32 @@
-const cursorTag = document.querySelector("div.cursors")
-const balls = cursorTag.querySelectorAll("div")
+/* Script grabbed from this link https://www.youtube.com/watch?v=uprZMdVl-aQ&ab_channel=SuperHi */
 
-let aimX = 0
-let aimY = 0
+const cursorTag = document.querySelector("div.cursors");
+const balls = cursorTag.querySelectorAll("div");
+
+let aimX = 0;
+let aimY = 0;
 
 balls.forEach((ball, index) => {
-    let currentX = 0
-    let currentY = 0
+  let currentX = 0;
+  let currentY = 0;
 
-    let speed = 0.3 - index * 0.015
+  let speed = 0.3 - index * 0.015;
 
-    const animate = function () {
-    currentX += (aimX - currentX) * speed
-    currentY += (aimY - currentY) * speed
+  const animate = function () {
+    currentX += (aimX - currentX) * speed;
+    currentY += (aimY - currentY) * speed;
 
-    ball.style.left = currentX + "px"
-    ball.style.top = currentY + "px"
+    ball.style.left = currentX + "px";
+    ball.style.top = currentY + "px";
 
-    requestAnimationFrame(animate)
-}
+    requestAnimationFrame(animate);
+  };
 
-animate()
-
-})
-
+  animate();
+});
 
 document.addEventListener("mousemove", function (ev) {
-   aimX = ev.pageX
-   aimY = ev.pageY
-})
-
+  aimX = ev.pageX;
+  aimY = ev.pageY;
+});
 
