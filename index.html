@@ -10,47 +10,68 @@
 	/>
 </head>
 
-<button onclick="myFunction()"><d>Toggle</d></button>
+    <body>
+        <script src="script.js"></script>
+        <script src="dark-mode.js"></script>
 
-<body>
-    <header>
-      <h1>Vincent's Website</h1>
-      <nav>
-        <a href="#aboutme">About me</a> 
-        <a href="#myprojects">My Projects</a> 
-        <a href="#content">Contents</a> 
-      </nav>
-    </header>
+    <section id="home">
+        <h1>Vincent's Website</h1>
+    </section>
+
+            <div id="navbar">
+                <a href="#home">Home</a>
+                <a href="#aboutme">About me</a> 
+                <a href="#myprojects">My Projects</a> 
+                <a href="#contact">Contact</a>
+                <a onclick="myFunction()">Toggle</a>
+         </div>
+
 
     <section id="aboutme">
         <h2>About me</h2>
             <p>My name is Vincent and I am a full-time 3rd Year Curtin Student studying the Information System Extension. 
-              After finishing my degree I hope to find a place where I can use my experience in Curtin to develop my coding skills.</p>
-    </section>
-
-    <section id="myprojects">
-        <h2>My Projects</h2>
-        <nav>
-        <a href="//github.com/vinpcat/isys3004-todolist3" target="_blank">link</a>
-
-        </nav>
-
-    </section>
-
-    <section id="content">
-        <h2>Content</h2>
-            <p> 
+              After finishing my degree I hope to find a place where I can use my experience in Curtin to develop my coding skills. This website's purpose
+            is to show the skills i've learned and how I was able to manipulate my knowledge of coding with help of some useful resoruces online.</p>
+            <p>
+                Click toggle for dark mode
             </p>
     </section>
 
-    <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-        }
-        </script>
-        
+    <section id="myprojects">
+        <h2>My Projects - Click one of the images!</h2>
+        <nav>
+            <div class="project">
+                <h3>To Do List</h3>
+                <a href="https://github.com/vinpcat/isys3004-todolist3" target="_blank">
+                <img src="https://imgur.com/B2PxATD.jpg" alt="To Do List Image" title="https://github.com/vinpcat/isys3004-todolist3">
+                </a>
+            </div>
+            
+            <div class="project">
+                <h3>Flatlands</h3>
+                <a href="https://github.com/vinpcat/isys3004-flatlands" target="_blank">
+                <img src="https://imgur.com/CfF7xFB.jpg" alt="Flatlands Image" title="https://github.com/vinpcat/isys3004-flatlands">
+            </a>
+            </div>
+            
+            <div class="project">
+                <h3>Rock-Paper-Scissors</h3>
+                <a href="https://github.com/vinpcat/isys3004-rock-paper-scissors" target="_blank">
+                <img src="https://imgur.com/ySsmXEr.jpg" alt="Rock-Paper-Scissors Image" title="https://github.com/vinpcat/isys3004-rock-paper-scissors">
+            </a>
+            </div>
+        </nav>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+  
     <div class="cursors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
@@ -65,4 +86,53 @@
     </div>
 
     <script src="cursor.js"></script>
-</body>
+
+
+    <div class="container" id="formContainer">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+    <section id="socials">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src=https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/512px-Facebook_f_logo_%282021%29.svg.png?20210818083032 alt="To Do List Image" title="https://www.facebook.com/">
+
+        <a href="https://www.instagram.com/instagram/?hl=en3" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png?20210403190622" alt="To Do List Image" title="https://www.instagram.com/instagram/?hl=en">
+
+    </section id="socials">
+
+    <footer class="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+        alt="Creative Commons License" style="border-width:0"
+        src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+        <br />This
+        work is licensed under a <br /><a rel="license"
+        href="http://creativecommons.org/licenses/by/4.0/"><b>Creative Commons
+        Attribution 4.0 International License</b></a>
+    </footer>
+
+      
+
+    </body>
+</html>
