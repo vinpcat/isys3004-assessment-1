@@ -1,37 +1,161 @@
 body {
-    font-family: helvetica, sans-serif;
-    margin: 0 auto; 
-    margin-top: 40px; 
-    width: 60%;
-    padding: 25px;
-    background: rgb(255, 252, 208);
-    border: 25px;
-    font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif; 
+  margin-top: 100px; 
+  padding: 30px;
+  background: #efefef;
+  border: 10px solid white;
+  font-size: 25px;
+  cursor: none;
 }
 
-.dark-mode {
-    background-color: rgb(48, 48, 48);
-    color: white;
-  }
+/* Below is the style script for when toggled to dark mode */
 
-  div.cursors div{
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    width: 12px;
-    height: 12px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 80%;
-    z-index: 10000;
-    pointer-events: none;
-    transform: translate(-50%, -50%)
-  }
- 
- 
-nav a {
-    color: black; 
+.dark-mode {
+  background-color: rgb(66, 70, 78);
+  color: white;
+  border: 10px solid white;
+  cursor: none;
+}
+
+.dark-mode .container {
+color: rgb(0, 0, 0);
+background-color: dark rgb(62, 62, 83);
 }
 
 .dark-mode nav a {
-    color: white; 
+  color: white; 
+}
+
+/* Below is the style for the trailing cursor */
+
+div.cursors div{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(255, 64, 64);
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%)
+}
+
+/* Below is the styling for the project images */
+
+.project img {
+  width: 20%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: rgb(195, 195, 195) solid;
+  cursor: none;
+}
+
+/* Styling of feedback form or contents */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color:  #ffffff;;
+  padding: 30px;
+}
+
+/* Style of Navbar */
+
+#navbar {
+overflow: hidden;
+  background-color: #fe6600;
+  padding: 20px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  left: 0;
+}
+
+#navbar a {
+overflow: hidden;
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+#navbar a:hover {
+background-color:#ffffff;
+color: black;
+cursor: none;
+}
+
+/* When clicking the link to the section I was having problems with the text 
+being covered by the padbar so I searched a way to fix that issue 
+@chatgpt "when i click on my projects I cant see the my projects text becuase it's covered by the nav bar" */
+
+#aboutme {
+padding-top: 45px; 
+}
+
+/* Added more coding to where the id home is centered, in this case the text
+"Vincent's Website" */
+
+#home {
+padding-top: 20px; 
+flex: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* footer */
+
+footer {
+height: max-content;
+text-align: center;
+padding: 50px;
+}
+
+/* Socials */
+
+#socials img {
+padding: 30px;
+float: left;
+width: 10%;
+object-fit: cover;
+justify-content: space-around;
 }
